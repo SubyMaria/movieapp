@@ -11,8 +11,12 @@ class Movies extends Component {
       this.setState({movies})
     }
     render() {
+      if(this.state.movies.length===0){
+                return <p>There are no movies in this section</p>
+      }
         return (
-            
+
+          
             <table className="table">
             <thead>
               <tr>
