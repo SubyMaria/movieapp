@@ -15,8 +15,8 @@ class Movies extends Component {
                 return <p>There are no movies in this section</p>
       }
         return (
-
-          
+         <React.Fragment>
+              <h3> Showing {this.state.movies.length} movies</h3>
             <table className="table">
             <thead>
               <tr>
@@ -38,7 +38,7 @@ class Movies extends Component {
               </tbody>
               </table>
             
-               
+              </React.Fragment> 
             
         )
     }
